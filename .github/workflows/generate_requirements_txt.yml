@@ -6,6 +6,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    container:
+      # A Docker image with Python
+      image: python
+    
 
     steps:
       - uses: actions/checkout@v4
